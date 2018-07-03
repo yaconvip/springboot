@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+</head>
+<body>
+<h2>部门列表</h2>
+<div>
+    <ul>
+        <li  th:each="dept:${depts}">
+            <span th:text="${dept.id}"></span>-
+            <span th:text="${dept.name}"></span>-
+            <span th:text="${dept.desc}"></span>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
